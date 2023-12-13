@@ -47,7 +47,7 @@ const Header = () => {
           onClick={handleCloseHamMenu}
           className="w-full md:hidden z-10 fixed right-0 top-0 h-screen bg-black bg-opacity-90"
         >
-          <div className="absolute  w-[40%] h-[40%] right-0 top-0 bg-white bg-opacity-60 p-4">
+          <div className="absolute  w-[70%] h-[40%] right-0 top-0 bg-white bg-opacity-60 p-4">
             <button className="px-8 py-2 text-white rounded-lg bg-gradient-to-r from-red-800 to-red-900">
               Login
             </button>
