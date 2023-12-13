@@ -100,7 +100,7 @@ const Planner = () => {
         </div>
       </div>
       <div className="w-[95%] p-6 m-auto lg:flex justify-between items-center">
-        <h2 className="lg:inline-block text-black font-bold text-lg">
+        <h2 className="lg:inline-block text-black font-bold text-lg text-center">
           Select a Fare Type
         </h2>
         {fareType.map((item, index) => (
