@@ -53,7 +53,7 @@ const Header = () => {
             </button>
             <ul>
               {navItems.map((items) => (
-                <li className="my-6 w-fit mx-1 text-2xl font-medium hover:text-red-900 border-b-2 border-red-900 cursor-pointer">
+                <li className="my-8 w-fit mx-1 text-2xl font-medium hover:text-red-900 border-b-2 border-red-900 cursor-pointer">
                   {items}
                 </li>
               ))}
