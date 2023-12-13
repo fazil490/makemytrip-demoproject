@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-2 md:px-12 pt-8 pb-[300px] bg-gradient-to-b from-red-600 to-red-800">
+    <header className="flex items-center justify-between px-6 md:px-12 pt-8 pb-[300px] bg-gradient-to-b from-red-600 to-red-800">
       <div className="">
         <img
           className="w-[150px] md:w-[200px]"
@@ -47,17 +47,17 @@ const Header = () => {
           onClick={handleCloseHamMenu}
           className="w-full md:hidden z-10 fixed right-0 top-0 h-screen bg-black bg-opacity-90"
         >
-          <div className="absolute  w-[55%] h-[40%] right-0 top-0 bg-white bg-opacity-60 p-4">
-            <button className="px-12 py-4 text-white rounded-lg bg-gradient-to-r from-red-800 to-red-900">
-              Login
-            </button>
+          <div className="absolute z-20 w-[55%] h-[100%] right-0 top-0 bg-white p-4">
             <ul>
               {navItems.map((items) => (
-                <li className="my-8 w-fit mx-1 text-2xl font-medium hover:text-red-900 border-b-2 border-red-900 cursor-pointer">
+                <li className="my-8 w-fit mx-1 text-xl font-medium hover:text-red-900 border-b-2 border-red-900 cursor-pointer">
                   {items}
                 </li>
               ))}
             </ul>
+            <button className="px-12 py-4 mt-4 text-white rounded-lg bg-gradient-to-r from-red-800 to-red-900">
+              Login
+            </button>
           </div>
         </aside>
       )}

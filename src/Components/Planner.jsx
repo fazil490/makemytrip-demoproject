@@ -39,13 +39,13 @@ const Planner = () => {
 
   return (
     <section className="w-[95%] relative m-auto -mt-48 md:-mt-28 rounded-3xl bg-white shadow-md">
-      <div className="w-[80%] lg:w-[40%] m-auto mb-4 px-4 py-6 rounded-2xl bg-white shadow-md absolute -mt-8 left-12 md:left-24 lg:absolute lg:-mt-10 lg:left-1/3">
+      <div className="w-[80%] lg:w-[40%] m-auto mb-4 px-4 py-6 rounded-2xl bg-white shadow-md absolute -mt-8 left-10 sm:left-16 md:left-20 lg:absolute lg:-mt-10 lg:left-1/3">
         <div className="flex justify-between items-center ">
           {tripType.map((item, index) => (
             <div className="flex items-center">
               <label
                 key={index}
-                className="text-gray-700 font-medium cursor-pointer"
+                className="text-gray-700 text-xs sm:text-sm md:text-lg font-medium cursor-pointer"
               >
                 <input
                   className="mr-2 cursor-pointer"
@@ -61,7 +61,7 @@ const Planner = () => {
       </div>
       <div className="w-[95%] m-auto p-6 pt-16 lg:flex gap-24 lg:pt-16">
         <div className="w-full bg-gray-100 rounded-xl flex justify-between flex-wrap">
-          <div className="flex justify-center items-center flex-wrap lg:w-[50%] text-center md:text-left">
+          <div className="flex justify-center sm:justify-between items-center flex-wrap sm:flex-nowrap md:w-[90%] md:m-auto xl:w-[50%] text-center xl:text-left">
             {tripRoute.map((item, i) => (
               <div
                 key={i}
@@ -79,7 +79,7 @@ const Planner = () => {
               </div>
             ))}
           </div>
-          <div className="flex justify-center items-center flex-wrap lg:w-[50%]  text-center md:text-left">
+          <div className="flex justify-center sm:justify-between items-center flex-wrap sm:flex-nowrap md:w-[90%] md:m-auto xl:w-[50%] text-center xl:text-left">
             {tripInfo.map((item, i) => (
               <div
                 key={i}
@@ -103,21 +103,20 @@ const Planner = () => {
         <h2 className="lg:inline-block text-black font-bold text-lg text-center">
           Select a Fare Type
         </h2>
-        {fareType.map((item, index) => (
-          <div className="block text-center  lg:flex">
-            <label
-              key={index}
-              className="text-gray-500 font-medium text-lg cursor-pointer"
-            >
-              <input
-                type="radio"
-                name="fare-type"
-                className="mr-2 cursor-pointer"
-              />
-              {item}
-            </label>
-          </div>
-        ))}
+        <div className="w-fit m-auto lg:flex gap-8">
+          {fareType.map((item, index) => (
+            <div className="block text-left">
+              <label className="text-gray-500 font-medium text-lg cursor-pointer">
+                <input
+                  type="radio"
+                  name="fare-type"
+                  className="mr-2 cursor-pointer"
+                />
+                {item}
+              </label>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="m-auto  flex items-center justify-center">
         <button className="-mb-6 px-12 py-2 shadow-md bg-gradient-to-r from-red-800 to-red-900 text-white text-xl rounded-lg">

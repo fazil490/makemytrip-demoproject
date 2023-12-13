@@ -9,7 +9,7 @@ import Wonders from "../Components/Wonders"
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-gray-50">
     <Header />
     <Planner />
     <Offers />
@@ -18,7 +18,7 @@ const Home = () => {
     <MoreInfo />
     <About />
     <Footer />
-    </>
+    </div>
   )
 }
 

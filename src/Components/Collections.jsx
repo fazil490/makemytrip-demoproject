@@ -33,11 +33,11 @@ const Collections = () => {
   ];
   return (
     <section className="w-[95%] m-auto rounded-3xl bg-white shadow-lg p-4 mb-4">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="cursor-pointer text-black font-bold text-3xl lg:text-4xl block lg:flex">
+      <div className="flex justify-between items-start md:items-center mb-8 gap-4">
+        <h2 className="cursor-pointer w-[75%] text-black font-bold text-xl md:text-2xl lg:text-3xl block lg:flex">
           Handpicked Collections for you
         </h2>
-        <p className="cursor-pointer text-lg font-bold text-red-800">
+        <p className="cursor-pointer pt-2 text-md md:text-lg lg:text-xl  font-bold text-red-800">
           View all
         </p>
       </div>

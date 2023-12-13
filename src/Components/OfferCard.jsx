@@ -51,7 +51,7 @@ const OfferCard = () => {
             <h4 className="text-gray-500 font-medium text-sm">
               {item?.offerType}
             </h4>
-            <h3 className="font-bold text-xl">{item?.title}</h3>
+            <h3 className="font-bold text-lg md:text-xl lg:text-2xl">{item?.title}</h3>
             <h4 className="text-gray-500 font-medium text-sm">
               {item?.offerDetails}
             </h4>

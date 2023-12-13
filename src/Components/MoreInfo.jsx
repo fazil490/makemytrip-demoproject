@@ -39,7 +39,7 @@ const MoreInfo = () => {
 {
   moreInfo.map((item, i) => (
     <div>
-      <h2 className="my-4 text-xl font-bold">{item?.title}</h2>
+      <h2 className="my-4 text-xl md:text-2xl font-bold">{item?.title}</h2>
       <p className="text-gray-500 font-medium">{item?.description}</p>
     </div>
   ))

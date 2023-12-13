@@ -18,10 +18,10 @@ const About = () => {
   ];
   return (
     <section className="bg-gray-100">
-      <div className="w-[95%] m-auto py-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">{
+      <div className="w-[95%] m-auto py-4 lg:grid lg:grid-cols-3 gap-8">{
         about.map((item, i) => (
           <div>
-            <h2 className="my-4 text-xl font-bold">{item?.title}</h2>
+            <h2 className="my-4 text-xl md:text-2xl font-bold">{item?.title}</h2>
             <p className="text-gray-500 font-medium">{item?.description}</p>
           </div>
         ))
