@@ -15,7 +15,7 @@ const Offers = () => {
         <h2 className="cursor-pointer text-black font-bold text-xl md:text-2xl lg:text-3xl block lg:flex">
           Offers
         </h2>
-        <ul className="hidden lg:flex items-center lg:gap-16">
+        <ul className="hidden lg:flex items-center lg:gap-8">
           {offerCategory.map((item, i) => (
             <li
               className="cursor-pointer text-gray-500 text-lg font-bold hover:text-red-800"

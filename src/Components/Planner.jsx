@@ -99,11 +99,11 @@ const Planner = () => {
           </div>
         </div>
       </div>
-      <div className="w-[95%] p-6 m-auto lg:flex justify-between items-center">
-        <h2 className="lg:inline-block text-black font-bold text-lg text-center">
+      <div className="w-[95%] p-6 m-auto lg:flex justify-between items-start">
+        <h2 className="lg:inline-block text-black font-bold text-lg">
           Select a Fare Type
         </h2>
-        <div className="w-fit m-auto lg:flex gap-8">
+        <div className="w-fit m-auto lg:flex flex-wrap gap-4">
           {fareType.map((item, index) => (
             <div className="block text-left">
               <label className="text-gray-500 font-medium text-lg cursor-pointer">
